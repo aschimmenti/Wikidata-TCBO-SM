@@ -1,0 +1,179 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+<https://www.wikidata.org/wiki/> a owl:Ontology ;
+    dcterms:title "Wikidata-TCBO-SM" ;
+    dcterms:description "An ontology reusing wikidata properties for theatre description " .
+
+wd:Human a rdfs:Class ;
+    rdfs:label "Human"@en ;
+    rdfs:label "Persona"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:LiteraryWork a rdfs:Class ;
+    rdfs:label "Literary Work"@en ;
+    rdfs:label "Opera Letteraria"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:Photograph a rdfs:Class ;
+    rdfs:label "Photograph"@en ;
+    rdfs:label "Fotografia"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:name a rdf:Property ;
+    rdfs:label "Name and Surname"@en ;
+    rdfs:label "Nome e Cognome"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:permanenturl a rdf:Property ;
+    rdfs:label "Permanent Wikidata URL"@en ;
+    rdfs:label "URL Wikidata permanente"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:sexOrGender a rdf:Property ;
+    rdfs:label "Sex or Gender"@en ;
+    rdfs:label "Sesso o Genere"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:countryOfCitizenship a rdf:Property ;
+    rdfs:label "Country of citizenship"@en ;
+    rdfs:label "Paese di cittadinanza"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:dateOfBirth a rdf:Property ;
+    rdfs:label "Date of birth"@en ;
+    rdfs:label "Data di nascita"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:placeOfBirth a rdf:Property ;
+    rdfs:label "Place of birth"@en ;
+    rdfs:label "Luogo di nascita"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:dateOfDeath a rdf:Property ;
+    rdfs:label "Date of death"@en ;
+    rdfs:label "Data di morte"@it ;    
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:placeOfDeath a rdf:Property ;
+    rdfs:label "Place of death"@en ;
+    rdfs:label "Luogo di morte"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:occupation a rdf:Property ;
+    rdfs:label "Occupation"@en ;
+    rdfs:label "Occupazione"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:voiceType a rdf:Property ;
+    rdfs:label "Voice Type"@en ;
+    rdfs:label "Ruolo vocale"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:instrument a rdf:Property ;
+    rdfs:label "Instrument"@en ;
+    rdfs:label "Strumento"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:genre a rdf:Property ;
+    rdfs:label "Genre"@en ;
+    rdfs:label "Genere"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+wd:viafId a rdf:Property ;
+    rdfs:label "VIAF ID" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:author a rdf:Property ;
+    rdfs:label "Author"@en ;
+    rdfs:label "Autore"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:creator a rdf:Property ;
+    rdfs:label "Creator"@en ;
+    rdfs:label "Creatore"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:depicts a rdf:Property ;
+    rdfs:label "Depicts"@en ;
+    rdfs:label "Rappresenta"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:eventID a rdf:Property ;
+    rdfs:label "eventID" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:performanceTitle a rdf:Property ;
+    rdfs:label "Performance"@en ;
+    rdfs:label "Spettacolo"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:denomination a rdf:Property ;
+    rdfs:label "Denomination"@en ;
+    rdfs:label "Denominazione"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:uriCorago a rdf:Property ;
+    rdfs:label "CORAGO" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:dateRep a rdf:Property ;
+    rdfs:label "Performance date"@en ;
+    rdfs:label "Date di rappresentazione"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:yearRep a rdf:Property ;
+    rdfs:label "Performance year"@en ;
+    rdfs:label "Anno di rappresentazione"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:characters a rdf:Property ;
+    rdfs:label "Characters"@en ;
+    rdfs:label "Personaggi"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:setting a rdf:Property ;
+    rdfs:label "Setting"@en ;
+    rdfs:label "Ambientazione"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+wd:compositionDate a rdf:Property ;
+    rdfs:label "Composition date"@en ;
+    rdfs:label "Data dell'opera"@it ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
